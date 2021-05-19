@@ -15,11 +15,9 @@ use App\Http\Controllers\MainController;
 */
 
 Route::view('/', 'welcome');
-// Route::get('/auth/login',[MainController::class,'login']); Original Login commentted
 Route::post('/auth/check',[MainController::class,'check'])->name('auth.check');
 Route::get('/auth/dashboard',[MainController::class,'dashboard']);
 Route::get('auth/login',[MainController::class,'login']);
-// Route::redirect('auth/login','/auth/dashboard');
 
 
 

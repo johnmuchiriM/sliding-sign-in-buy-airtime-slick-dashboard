@@ -27,7 +27,7 @@ input {
     left: 0;
 }
 
-.signin-signup {
+.signin-getairtime {
     position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
@@ -51,7 +51,7 @@ form {
     grid-row: 1 / 2;
 }
 
-form.sign-up-form {
+form.get-airtime-form {
     opacity: 0;
     z-index: 1;
 }
@@ -233,40 +233,39 @@ form.sign-in-form {
 
 /* ANIMATION */
 
-.container.sign-up-mode:before {
+.container.get-airtime-mode:before {
     transform: translate(100%, -50%);
     right: 52%;
 }
 
-.container.sign-up-mode .left-panel .image,
-.container.sign-up-mode .left-panel .content {
+.container.get-airtime-mode .left-panel .image,
+.container.get-airtime-mode .left-panel .content {
     transform: translateX(-800px);
 }
 
-.container.sign-up-mode .signin-signup {
+.container.get-airtime-mode .signin-getairtime {
     left: 25%;
 }
 
-.container.sign-up-mode form.sign-up-form {
+.container.get-airtime-mode form.get-airtime-form {
     opacity: 1;
     z-index: 2;
 }
 
-.container.sign-up-mode form.sign-in-form {
+.container.get-airtime-mode form.sign-in-form {
     opacity: 0;
     z-index: 1;
 }
-
-.container.sign-up-mode .right-panel .image,
-.container.sign-up-mode .right-panel .content {
+.container.get-airtime-mode .right-panel .image,
+.container.get-airtime-mode .right-panel .content {
     transform: translateX(0%);
 }
 
-.container.sign-up-mode .left-panel {
+.container.get-airtime-mode .left-panel {
     pointer-events: none;
 }
 
-.container.sign-up-mode .right-panel {
+.container.get-airtime-mode .right-panel {
     pointer-events: all;
 }
 
@@ -275,15 +274,15 @@ form.sign-in-form {
         min-height: 800px;
         height: 100vh;
     }
-    .signin-signup {
+    .signin-getairtime {
         width: 100%;
         top: 95%;
         transform: translate(-50%, -100%);
         transition: 1s 0.8s ease-in-out;
     }
 
-    .signin-signup,
-    .container.sign-up-mode .signin-signup {
+    .signin-getairtime,
+    .container.get-airtime-mode .signin-getairtime {
         left: 50%;
     }
 
@@ -346,19 +345,19 @@ form.sign-in-form {
         transition: 2s ease-in-out;
     }
 
-    .container.sign-up-mode:before {
+    .container.get-airtime-mode:before {
         transform: translate(-50%, 100%);
         bottom: 32%;
         right: initial;
     }
 
-    .container.sign-up-mode .left-panel .image,
-    .container.sign-up-mode .left-panel .content {
+    .container.get-airtime-mode .left-panel .image,
+    .container.get-airtime-mode .left-panel .content {
         transform: translateY(-300px);
     }
 
-    .container.sign-up-mode .right-panel .image,
-    .container.sign-up-mode .right-panel .content {
+    .container.get-airtime-mode .right-panel .image,
+    .container.get-airtime-mode .right-panel .content {
         transform: translateY(0px);
     }
 
@@ -367,7 +366,7 @@ form.sign-in-form {
         transform: translateY(300px);
     }
 
-    .container.sign-up-mode .signin-signup {
+    .container.get-airtime-mode .signin-getairtime {
         top: 5%;
         transform: translate(-50%, 0);
     }
@@ -393,7 +392,7 @@ form.sign-in-form {
         left: 50%;
     }
 
-    .container.sign-up-mode:before {
+    .container.get-airtime-mode:before {
         bottom: 28%;
         left: 50%;
     }
